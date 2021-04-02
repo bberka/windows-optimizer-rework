@@ -4,22 +4,39 @@ The goal of this project is to give users option optimize Windows OS in general 
 
 # Features
 Remove or install Windows pre-installed apps
+
 Clear useless system files such as temporary, windows update and other files
+
 E/D Full screen optimization globally
+
 E/D Useless system services (You can see which servies disabled by checking resource file in the project)
+
 E/D Windows defender
+
 Disable Prefetch/Superfetch
+
 Disable all tracking, telemetry, metadata collection services or apps
+
 Disable Windows gamebar or anything related to it
+
 Optimize Registry which edits some reg keys to improve performance in general OS
+
 Apply MMCSS Tweaks is a reg key tweak for improving gaming performance
+
 Enable TRIM 
+
 Enable Ultimate Performance Power Plan
+
 Add/Remove Take Ownership option from context menu
+
 Optimize NTFS File system
+
 HEX Windows latency tweak
+
 E/D Hyper Precision Event Timer (for advanced users only)
+
 E/D Synthetic Timer (for advanced users only)
+
 E/D Dynamic Tick (for advanced users only)
 
 # Screenshots
