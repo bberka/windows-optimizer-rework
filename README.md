@@ -1,11 +1,14 @@
 # Windows Optimizer App Reworked
 This app is rework of this project: https://github.com/berkaybayar/optimize-tool
+
 The goal of this project is to give users option optimize Windows OS in general by removing some apps and disabling some services provided by Microsoft.
 
 # Features
 Remove or install Windows pre-installed apps
 
 Clear useless system files such as temporary, windows update and other files
+
+Create a backup of registery files
 
 E/D Full screen optimization globally
 
@@ -43,3 +46,7 @@ E/D Dynamic Tick (for advanced users only)
 ![Screenshot_3](https://user-images.githubusercontent.com/77205615/113425257-3d910580-93da-11eb-943f-c4e0a3d5b59c.jpg)
 ![Screenshot_4](https://user-images.githubusercontent.com/77205615/113425266-3ec23280-93da-11eb-8f18-e5c5c016ad47.jpg)
 ![Screenshot_5](https://user-images.githubusercontent.com/77205615/113425243-3669f780-93da-11eb-90ae-5f3ef9af766e.jpg)
+
+# Warning
+ Create a backup of registery keys (you can do it within the app)
+ This is not a completely bug free tool so you may encounter with some issues please report bugs or issues you encounter.
