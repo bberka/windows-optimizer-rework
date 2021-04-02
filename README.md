@@ -47,6 +47,11 @@ E/D Dynamic Tick (for advanced users only)
 ![Screenshot_4](https://user-images.githubusercontent.com/77205615/113425266-3ec23280-93da-11eb-8f18-e5c5c016ad47.jpg)
 ![Screenshot_5](https://user-images.githubusercontent.com/77205615/113425243-3669f780-93da-11eb-90ae-5f3ef9af766e.jpg)
 
-# Warning
- Create a backup of registery keys (you can do it within the app)
- This is not a completely bug free tool so you may encounter with some issues please report bugs or issues you encounter.
+# WARNING
+This edits default settings of Windows OS that is not recommended by Microsoft. Only use if you know what you are doing.
+
+Create a backup of registery keys (you can do it within the app)
+ 
+This is not a completely bug free tool so you may encounter with some issues please report bugs or issues you encounter.
+
+You are responsible any damage done to your computer.
