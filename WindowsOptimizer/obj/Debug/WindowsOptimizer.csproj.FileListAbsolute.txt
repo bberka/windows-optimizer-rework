@@ -1,0 +1,15 @@
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\bin\Debug\WindowsOptimizer.exe.config
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\bin\Debug\WindowsOptimizer.exe
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\bin\Debug\WindowsOptimizer.pdb
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.csprojAssemblyReference.cache
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.Properties.Resources.resources
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.csproj.GenerateResource.cache
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.csproj.CoreCompileInputs.cache
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.exe
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.pdb
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.frmContact.resources
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.frmMain.resources
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.frmWinApps.resources
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.frmDriveC.resources
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.frmWinSrv.resources
+C:\Users\berka\source\repos\WindowsOptimizer\WindowsOptimizer\obj\Debug\WindowsOptimizer.frmAdv.resources

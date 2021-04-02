@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="add_takeown" xml:space="preserve">
+    <value>Windows Registry Editor Version 5.00                                                                                                                                                             Registry File By Adamx (youtube.com/AdamxYT)
+
+[HKEY_CLASSES_ROOT\*\shell\runas]
+@="Take Ownership"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\*\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" &amp;&amp; icacls \"%1\" /grant administrators:F"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" &amp;&amp; icacls \"%1\" /grant administrators:F"
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas]
+@="Take Ownership"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\" /r /d y &amp;&amp; icacls \"%1\" /grant administrators:F /t"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\" /r /d y &amp;&amp; icacls \"%1\" /grant administrators:F /t"</value>
+  </data>
+  <data name="bgapps" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Search' -Name 'BackgroundAppGlobalToggle' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications' -Name 'GlobalUserDisabled' -value '1' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="diagtrack" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Control Panel\Desktop' -Name 'WindowArrangementActive' -value '0' -PropertyType String -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Personalization\Settings' -Name 'AcceptedPrivacyPolicy' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack' -Name 'ShowedToastAtLevel' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Privacy' -Name 'TailoredExperiencesWithDiagnosticDataEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'Start_TrackProgs' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager' -Name 'SubscribedContent-338393Enabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager' -Name 'SubscribedContent-338394Enabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager' -Name 'SubscribedContent-338396Enabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo' -Name 'Enabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess -Name 'Value' -value 'Allow' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata' -Name 'PreventDeviceMetadataFromNetwork' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection' -Name 'AllowTelemetry' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection' -Name 'MaxTelemetryAllowed' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack' -Name 'UploadPermissionReceived' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack' -Name 'DiagTrackAuthorization' -value '775' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack' -Name 'DiagTrackStatus' -value '2' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\TraceManager' -Name 'miniTraceSlotEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\TraceManager' -Name 'miniTraceSlotContentPermitted' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 'PublishUserActivities' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System -Name 'UploadUserActivities' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows Defender\Spynet' -Name 'SubmitSamplesConsent' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy' -Name 'HasAccepted' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search' -Name 'CortanaEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search' -Name 'BingSearchEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search' -Name 'CortanaConsent' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search' -Name 'AllowCortana' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search' -Name 'DisableWebSearch' -value '1' -PropertyType DWORD -Force 
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search' -Name 'AllowCloudSearch' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments' -Name 'Value' -value 'Deny' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Settings\FindMyDevice' -Name 'LocationSyncEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\DiagTrack' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\dmwappushservice' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\diagsvc' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\DPS' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\WdiServiceHost' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\WdiSystemHost' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+Set-Service DiagTrack -StartupType Disabled</value>
+  </data>
+  <data name="fullscroptdis" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\System\GameConfigStore' -Name 'GameDVR_FSEBehaviorMode' -value '00000002' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\SYSTEM\CurrentControlSet\Services\hidserv' -Name 'Start' -value '00000004' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="fullscropten" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\System\GameConfigStore' -Name 'GameDVR_FSEBehaviorMode' -value '00000000' -PropertyType DWORD -Force
+</value>
+  </data>
+  <data name="gamedvr" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\System\GameConfigStore' -Name 'GameDVR_Enabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\GameBar' -Name 'UseNexusForGameBarEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR' -Name 'AudioCaptureEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR' -Name 'HistoricalCaptureEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR' -Name 'CursorCaptureEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\GameBar' -Name 'AutoGameModeEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR' -Name 'AllowgameDVR' -value '0'
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\AppBroadcast\GlobalSettings' -Name 'AudioCaptureEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\AppBroadcast\GlobalSettings' -Name 'MicrophoneCaptureEnabledByDefault' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\AppBroadcast\GlobalSettings' -Name 'CursorCaptureEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\AppBroadcast\GlobalSettings' -Name 'CameraCaptureEnabledByDefault' -value '0' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="hex16" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\PriorityControl' -Name 'Win32PrioritySeparation' -value '00000016' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="hex25" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\PriorityControl' -Name 'Win32PrioritySeparation' -value '00000025' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="hex26" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\PriorityControl' -Name 'Win32PrioritySeparation' -value '00000026' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="hex28" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\PriorityControl' -Name 'Win32PrioritySeparation' -value '00000028' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="mmcssreg" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile' -Name 'SystemResponsiveness' -value '00000000' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile' -Name 'NetworkThrottlingIndex' -value 'ffffffff' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games' -Name 'Affinity' -value '00000000' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games' -Name 'Background Only' -value 'False' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games' -Name 'Clock Rate' -value '00002710' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games' -Name 'GPU Priority' -value '00000008' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games' -Name 'Priority' -value '00000006' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games' -Name 'Scheduling Category' -value 'High' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games' -Name 'SFIO Priority' -value 'High' -PropertyType String -Force</value>
+  </data>
+  <data name="mousereg" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseSpeed' -value '0' -PropertyType STRING -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseThreshold1' -value '0' -PropertyType STRING -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseThreshold2' -value '0' -PropertyType STRING -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseSensitivity' -value '10'
+New-Itemproperty -path 'HKCU:\Control Panel\Desktop' -Name 'MouseWheelRouting' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Cursors' -Name 'ContactVisualization' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Cursors' -Name 'GestureVisualization' -value '0' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="notifreg" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings' -Name 'NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings' -Name 'NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'ToastEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'LockScreenToastEnabled' -value '0' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="onedrivereg" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run' -Name 'OneDrive' -value '0100000004077640378fd401' -PropertyType Binary -Force</value>
+  </data>
+  <data name="optregkeys" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows NT\CurrentVersion\AccessibilityTemp' -Name 'narrator' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Narrator\NoRoam' -Name 'RunningState' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings' -Name 'ShowHibernateOption' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name 'NoAutoUpdate' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\WindowsStore' -Name 'AutoDownload' -value '2' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Input\Settings' -Name 'InsightsEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Input\Settings' -Name 'Insights' -value '01000000071de8c131cc8360a3d6d9c1330a686b165aba2e235f5a5c' -PropertyType Binary -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers' -Name 'DisableAutoplay' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People' -Name 'PeopleBand' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'EnableAutoTray' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\International\User Profile' -Name 'HttpAcceptLanguageOptOut' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Siuf\Rules' -Name 'NumberOfSIUFInPeriod' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'HideFileExt' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CDP' -Name 'RomeSdkChannelUserAuthzPolicy' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CDP' -Name 'CdpSessionUserAuthzPolicy' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell' -Name 'SignInMode' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell' -Name 'ConvertibleSlateModePromptPreference' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\System\CurrentControlSet\Control\Remote Assistance' -Name 'fAllowToGetHelp' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient' -Name 'EnableMulticast' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings' -Name 'ProxyEnable' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters' -Name 'DisabledComponents' -value '32' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseSpeed' -value '0' -PropertyType STRING -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseThreshold1' -value '0' -PropertyType STRING -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseThreshold2' -value '0' -PropertyType STRING -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Mouse' -Name 'MouseSensitivity' -value '10'
+New-Itemproperty -path 'HKCU:\Control Panel\Desktop' -Name 'MouseWheelRouting' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Cursors' -Name 'ContactVisualization' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Cursors' -Name 'GestureVisualization' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableAutocorrection' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableSpellchecking' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableTextPrediction' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnablePredictionSpaceInsertion' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableDoubleTapSpace' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableInkingWithTouch' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\PenWorkspace' -Name 'PenWorkspaceAppSuggestionsEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Language"' -Name 'Enabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\InputPersonalization' -Name 'RestrictImplicitTextCollection' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\InputPersonalization' -Name 'RestrictImplicitInkCollection' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore' -Name 'HarvestContacts' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects' -Name 'VisualFXSetting' -value '2' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize' -Name 'EnableTransparency' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization' -Name 'NoLockScreen' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings' -Name 'NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings' -Name 'NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'ToastEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'LockScreenToastEnabled' -value '0' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="personreg" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Language"' -Name 'Enabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\InputPersonalization' -Name 'RestrictImplicitTextCollection' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\InputPersonalization' -Name 'RestrictImplicitInkCollection' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore' -Name 'HarvestContacts' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects' -Name 'VisualFXSetting' -value '2' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize' -Name 'EnableTransparency' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\Desktop' -Name 'MenuShowDelay' -value '20' -PropertyType String -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control' -Name 'WaitToKillServiceTimeout' -value '200' -PropertyType String -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer' -Name 'NoRecentDocsHistory' -value '1' -PropertyType Dword -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization' -Name 'NoLockScreen' -value '1' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="prefetchd" xml:space="preserve">
+    <value>@echo off
+
+:: BatchGotAdmin
+:-------------------------------------
+REM  --&gt; Check for permissions
+&gt;nul 2&gt;&amp;1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+
+REM --&gt; If error flag set, we do not have admin.
+if '%errorlevel%' NEQ '0' (
+    echo Requesting administrative privileges...
+    goto UACPrompt
+) else ( goto gotAdmin )
+
+:UACPrompt
+    echo Set UAC = CreateObject^("Shell.Application"^) &gt; "%temp%\getadmin.vbs"
+    set params = %*:"=""
+    echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 &gt;&gt; "%temp%\getadmin.vbs"
+
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+    exit /B
+
+:gotAdmin
+    pushd "%CD%"
+    CD /D "%~dp0"
+@echo
+echo Batch File By Adamx (youtube.com/AdamxYT)
+@echo
+net stop SysMain
+@echo
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\SysMain" /v "Start" /t REG_DWORD /d "4" /f
+@echo
+pause</value>
+  </data>
+  <data name="remove_takeown" xml:space="preserve">
+    <value>Windows Registry Editor Version 5.00                                                                                                                                                             Registry File By Adamx (youtube.com/AdamxYT)
+
+[-HKEY_CLASSES_ROOT\*\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\runas]</value>
+  </data>
+  <data name="tabettipreg" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableAutocorrection' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableSpellchecking' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableTextPrediction' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnablePredictionSpaceInsertion' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableDoubleTapSpace' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\TabletTip\1.7' -Name 'EnableInkingWithTouch' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\PenWorkspace' -Name 'PenWorkspaceAppSuggestionsEnabled' -value '0' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="uselessreg" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows NT\CurrentVersion\AccessibilityTemp' -Name 'narrator' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Narrator\NoRoam' -Name 'RunningState' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings' -Name 'ShowHibernateOption' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name 'NoAutoUpdate' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\WindowsStore' -Name 'AutoDownload' -value '2' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Input\Settings' -Name 'InsightsEnabled' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Input\Settings' -Name 'Insights' -value '01000000071de8c131cc8360a3d6d9c1330a686b165aba2e235f5a5c' -PropertyType Binary -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers' -Name 'DisableAutoplay' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People' -Name 'PeopleBand' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'EnableAutoTray' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Control Panel\International\User Profile' -Name 'HttpAcceptLanguageOptOut' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Siuf\Rules' -Name 'NumberOfSIUFInPeriod' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'HideFileExt' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CDP' -Name 'RomeSdkChannelUserAuthzPolicy' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CDP' -Name 'CdpSessionUserAuthzPolicy' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell' -Name 'SignInMode' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell' -Name 'ConvertibleSlateModePromptPreference' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\System\CurrentControlSet\Control\Remote Assistance' -Name 'fAllowToGetHelp' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient' -Name 'EnableMulticast' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings' -Name 'ProxyEnable' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters' -Name 'DisabledComponents' -value '32' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="windefdis" xml:space="preserve">
+    <value>New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender' -Name 'DisableAntiSpyware' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender' -Name 'DisableRoutinelyTakingAction' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender' -Name 'ServiceKeepAlive' -value '0' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableAntiSpyware' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableBehaviorMonitoring' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableOnAccessProtection' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableScanOnRealtimeEnable' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableIOAVProtection' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableRealtimeMonitoring' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting' -Name 'DisableEnhancedNotifications' -value '1' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\WinDefend' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\SecurityHealthService' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\WdNisSvc' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\Sense' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\wscsvc' -Name 'Start' -value '00000004' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'NoToastApplicationNotification' -value '00000001' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKCU:\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'NoToastApplicationNotificationOnLockScreen' -value '00000001' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="windefen" xml:space="preserve">
+    <value>Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender' -Name 'DisableAntiSpyware' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableAntiSpyware' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableRoutinelyTakingAction' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'ServiceKeepAlive' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableBehaviorMonitoring' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableOnAccessProtection' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableScanOnRealtimeEnable' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableIOAVProtection' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection' -Name 'DisableRealtimeMonitoring' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications' -Name 'DisableNotifications' 
+Remove-Itemproperty -path 'HKLM:\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'NoToastApplicationNotification' 
+Remove-Itemproperty -path 'HKLM:\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications' -Name 'NoToastApplicationNotificationOnLockScreen' 
+Remove-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting' -Name 'DisableEnhancedNotifications' 
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\WinDefend' -Name 'Start' -value '00000002' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\SecurityHealthService' -Name 'Start' -value '00000003' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\WdNisSvc' -Name 'Start' -value '00000003' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\Sense' -Name 'Start' -value '00000003' -PropertyType DWORD -Force
+New-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\wscsvc' -Name 'Start' -value '00000002' -PropertyType DWORD -Force</value>
+  </data>
+  <data name="winsrvd" xml:space="preserve">
+    <value>Set-Service AxInstSV -StartupType Disabled
+Set-Service bthserv -StartupType Disabled
+Set-Service dmwappushservice -StartupType Disabled
+Set-Service MapsBroker -StartupType Disabled
+Set-Service lfsvc -StartupType Disabled
+Set-Service SharedAccess -StartupType Disabled
+Set-Service lltdsvc -StartupType Disabled
+Set-Service NetTcpPortSharing -StartupType Disabled
+Set-Service PhoneSvc -StartupType Disabled
+Set-Service Spooler -StartupType Disabled
+Set-Service PrintNotify -StartupType Disabled
+Set-Service QWAVE -StartupType Disabled
+Set-Service RmSvc -StartupType Disabled
+Set-Service SensorDataService -StartupType Disabled
+Set-Service SensrSvc -StartupType Disabled
+Set-Service SensorService -StartupType Disabled
+Set-Service ShellHWDetection -StartupType Disabled
+Set-Service SCardSvr -StartupType Disabled
+Set-Service ScDeviceEnum -StartupType Disabled
+Set-Service SSDPSRV -StartupType Disabled
+Set-Service WiaRpc -StartupType Disabled
+Set-Service TabletInputService -StartupType Disabled
+Set-Service upnphost -StartupType Disabled
+Set-Service UserDataSvc -StartupType Disabled
+Set-Service WalletService -StartupType Disabled
+Set-Service FrameServer -StartupType Disabled
+Set-Service stisvc -StartupType Disabled
+Set-Service wisvc -StartupType Disabled
+Set-Service icssvc -StartupType Disabled
+Set-Service WSearch -StartupType Disabled
+Set-Service XblAuthManager -StartupType Disabled
+Set-Service XblGameSave -StartupType Disabled
+Set-Service SEMgrSvc -StartupType Disabled
+Set-Service AppVClient -StartupType Disabled
+Set-Service CscService -StartupType Disabled
+Set-Service UevAgentService -StartupType Disabled</value>
+  </data>
+  <data name="winsrve" xml:space="preserve">
+    <value>Set-Service AxInstSV -StartupType Enabled
+Set-Service bthserv -StartupType Enabled
+Set-Service dmwappushservice -StartupType Enabled
+Set-Service MapsBroker -StartupType Enabled
+Set-Service lfsvc -StartupType Enabled
+Set-Service SharedAccess -StartupType Enabled
+Set-Service lltdsvc -StartupType Enabled
+Set-Service NetTcpPortSharing -StartupType Enabled
+Set-Service PhoneSvc -StartupType Enabled
+Set-Service Spooler -StartupType Enabled
+Set-Service PrintNotify -StartupType Enabled
+Set-Service QWAVE -StartupType Enabled
+Set-Service RmSvc -StartupType Enabled
+Set-Service SensorDataService -StartupType Enabled
+Set-Service SensrSvc -StartupType Enabled
+Set-Service SensorService -StartupType Enabled
+Set-Service ShellHWDetection -StartupType Enabled
+Set-Service SCardSvr -StartupType Enabled
+Set-Service ScDeviceEnum -StartupType Enabled
+Set-Service SSDPSRV -StartupType Enabled
+Set-Service WiaRpc -StartupType Enabled
+Set-Service TabletInputService -StartupType Enabled
+Set-Service upnphost -StartupType Enabled
+Set-Service UserDataSvc -StartupType Enabled
+Set-Service WalletService -StartupType Enabled
+Set-Service FrameServer -StartupType Enabled
+Set-Service stisvc -StartupType Enabled
+Set-Service wisvc -StartupType Enabled
+Set-Service icssvc -StartupType Enabled
+Set-Service WSearch -StartupType Enabled
+Set-Service XblAuthManager -StartupType Enabled
+Set-Service XblGameSave -StartupType Enabled
+Set-Service SEMgrSvc -StartupType Enabled
+Set-Service AppVClient -StartupType Enabled
+Set-Service CscService -StartupType Enabled
+Set-Service UevAgentService -StartupType Enabled</value>
+  </data>
+</root>

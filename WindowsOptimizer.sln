@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsOptimizer", "WindowsOptimizer\WindowsOptimizer.csproj", "{ABCC9938-926D-4D47-8E90-7060B021D91C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{8F3751BA-7B11-4FD1-A44F-1BFD06B8E9C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABCC9938-926D-4D47-8E90-7060B021D91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCC9938-926D-4D47-8E90-7060B021D91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCC9938-926D-4D47-8E90-7060B021D91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCC9938-926D-4D47-8E90-7060B021D91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3751BA-7B11-4FD1-A44F-1BFD06B8E9C7}.Debug|Any CPU.ActiveCfg = Debug
+		{8F3751BA-7B11-4FD1-A44F-1BFD06B8E9C7}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0439F38-F167-4827-AEB9-2AD33A3AEA20}
+	EndGlobalSection
+EndGlobal
