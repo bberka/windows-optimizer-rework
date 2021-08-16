@@ -1,5 +1,4 @@
 # Windows Optimizer App Reworked
-This app is rework of this project: https://github.com/berkaybayar/optimize-tool
 
 The goal of this project is to give users option optimize Windows OS in general by removing some apps and disabling some services provided by Microsoft.
 
